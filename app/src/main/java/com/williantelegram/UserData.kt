@@ -1,6 +1,8 @@
 package com.williantelegram
 
-class UserData(val id: String, val name: String, val year: String)
+import java.io.Serializable
+
+class UserData(val id: String, val name: String, val year: String): Serializable
 
 enum class UserDataSortType {
     NAME, YEAR
